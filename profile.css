@@ -1,1 +1,253 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
 
+body{
+
+background:#080808;
+color:white;
+
+}
+
+header{
+
+padding:50px 8%;
+
+}
+
+.top{
+
+display:flex;
+justify-content:space-between;
+color:#999;
+font-size:14px;
+margin-bottom:40px;
+
+}
+
+.hero{
+
+display:grid;
+grid-template-columns:1fr 1.4fr .6fr;
+align-items:center;
+gap:30px;
+
+}
+
+.left h2{
+
+font-size:70px;
+font-weight:900;
+line-height:75px;
+
+}
+
+.left h3{
+
+margin:20px 0;
+color:#ff2b2b;
+
+}
+
+.left p{
+
+color:#bdbdbd;
+line-height:28px;
+
+}
+
+.available{
+
+margin-top:30px;
+color:#ff3d3d;
+
+}
+
+.center{
+
+position:relative;
+text-align:center;
+
+}
+
+.background-text{
+
+position:absolute;
+font-size:180px;
+font-weight:900;
+color:#b60000;
+opacity:.35;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+letter-spacing:8px;
+z-index:0;
+
+}
+
+.center img{
+
+width:430px;
+position:relative;
+z-index:5;
+
+}
+
+.right{
+
+display:flex;
+flex-direction:column;
+gap:35px;
+
+}
+
+.box h2{
+
+color:#ff3030;
+font-size:45px;
+
+}
+
+.content{
+
+display:grid;
+grid-template-columns:1fr 1fr .8fr;
+gap:30px;
+
+padding:80px 8%;
+
+}
+
+.education,
+.process,
+.quote{
+
+border:1px solid #222;
+padding:35px;
+background:#101010;
+
+}
+
+.education h2,
+.process h2{
+
+margin-bottom:25px;
+
+}
+
+.education h3{
+
+margin-top:25px;
+color:#ff3030;
+
+}
+
+.skills{
+
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+margin-top:20px;
+
+}
+
+.skills span{
+
+padding:8px 18px;
+border:1px solid #444;
+
+}
+
+.step{
+
+margin:22px 0;
+
+}
+
+.step h3{
+
+color:#ff3030;
+
+}
+
+.quote{
+
+background:linear-gradient(160deg,#1b0000,#5e0000);
+
+}
+
+.quote h1{
+
+font-size:90px;
+color:#ff4040;
+
+}
+
+.quote p{
+
+font-size:23px;
+line-height:40px;
+margin:20px 0;
+
+}
+
+footer{
+
+padding:80px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-top:1px solid #222;
+
+}
+
+footer h1{
+
+font-size:50px;
+
+}
+
+.contact{
+
+line-height:45px;
+
+}
+
+@media(max-width:1000px){
+
+.hero{
+
+grid-template-columns:1fr;
+
+}
+
+.content{
+
+grid-template-columns:1fr;
+
+}
+
+footer{
+
+flex-direction:column;
+gap:40px;
+text-align:center;
+
+}
+
+.background-text{
+
+font-size:90px;
+
+}
+
+.center img{
+
+width:300px;
+
+}
+
+}
